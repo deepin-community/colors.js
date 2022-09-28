@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+libname = colors
+node-pkgname = node-$(libname)
+node-destdir ?= /usr/lib/nodejs
+js-destdir ?= $(node-destdir)/$(libname)
+node-destexample ?= usr/share/doc/$(node-pkgname)/examples
+
+%:
+	dh $@ --with nodejs
+
+override_dh_installexamples:
+	dh_installexamples
+	sed -i "s#'\.\./#'$(js-destdir)/#" debian/$(node-pkgname)/$(node-destexample)/*.js
+	sed -i "s#/\.\./themes#/themes#" debian/$(node-pkgname)/$(node-destexample)/*.js

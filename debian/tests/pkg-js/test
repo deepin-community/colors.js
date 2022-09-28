@@ -1,0 +1,6 @@
+export term=xterm-256color
+export FORCE_COLOR=1
+echo "# basic test"
+node tests/basic-test.js
+echo "# safe test"
+node tests/safe-test.js
