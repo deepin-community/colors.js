@@ -7,8 +7,8 @@ Uploaders: Marcelo Jorge Vieira <metal@debian.org>
 Build-Depends:
  debhelper-compat (= 13)
  , node-assert <!nocheck>
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.1
+ , dh-sequence-nodejs
+Standards-Version: 4.6.1
 Homepage: https://github.com/marak/colors.js
 Vcs-Browser: https://salsa.debian.org/js-team/colors.js
 Vcs-Git: https://salsa.debian.org/js-team/colors.js.git
@@ -18,7 +18,6 @@ Package: node-colors
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
 Multi-Arch: foreign
 Description: Get color and style in your node.js console
  This package contains the NodeJS module.

@@ -1,1 +1,2 @@
-.pc/
+**/*.sw*
+node_modules
