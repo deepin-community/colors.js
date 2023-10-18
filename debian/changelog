@@ -1,3 +1,14 @@
+colors.js (1.4.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Drop __proto__ calls
+
+ -- Yadd <yadd@debian.org>  Sat, 17 Sep 2022 20:19:28 +0200
+
 colors.js (1.4.0-3) unstable; urgency=medium
 
   [ Debian Janitor ]

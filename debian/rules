@@ -7,7 +7,7 @@ js-destdir ?= $(node-destdir)/$(libname)
 node-destexample ?= usr/share/doc/$(node-pkgname)/examples
 
 %:
-	dh $@ --with nodejs
+	dh $@
 
 override_dh_installexamples:
 	dh_installexamples
